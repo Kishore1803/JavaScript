@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+
+  <body>
+    <script>
+      // push method
+      let fruits = ["apple", "banana"];
+      fruits.push("orange");
+      console.log(fruits);
+
+      // pop method
+      fruits.pop();
+      console.log(fruits);
+
+      // shift method
+      fruits.shift();
+      console.log(fruits);
+
+      // unshift method
+      fruits.unshift("mango");
+      console.log(fruits);
+
+      // for each
+      const num = [1, 2, 3, 4, 5];
+      num.forEach((n) => {
+        console.log(n + 2);
+      });
+      // dubbled num
+      const nums = [1, 2, 3, 4, 5];
+      const dubbled = nums.map((n) => n * 2);
+      console.log(dubbled);
+
+      // filter
+      const numb = [1, 2, 3, 4, 5];
+      const even = numb.filter((n) => n % 2 === 0);
+      console.log(even);
+
+      // reduce
+      const numbe = [1, 2, 3, 4, 5];
+      const sum = numbe.reduce((total, n) => total + n, 0);
+      console.log(sum, "num");
+    </script>
+  </body>
+</html>

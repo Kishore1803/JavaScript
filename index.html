@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SAMPLE</title>
+</head>
+<body>
+    <h1>SAMPLE JS</h1>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1{
+           color: white;
+           background-color: black;
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           padding: 10px;
+           margin: 5px;
+           border-radius: 10px;
+           font-size: 24px;
+        }
+    </style>
+
+    <script>
+        // This is a sample JavaScript code
+        console.log("Hello, World!");
+
+        // sample
+        var a = 10;
+        a = 20;
+        console.log(a);
+
+        let b = 30;
+        console.log(b);
+
+        const c = 50;
+        //  c = 60;  // This will cause an error
+        console.log(c);
+
+        // add a two numbers 
+        let d = 10;
+        let e = 20;
+        let sum = d + e;
+        console.log(d+e);
+
+        // remove an element from an array
+        let arr =[1,2,3,4,5,5,4];
+        let unique = [...new Set(arr)];
+        console.log(unique);
+
+        // push a element to an array 
+        let fruits = ["apple", "banana"];
+        fruits.push("orange");
+        console.log(fruits);
+
+        // remove last element from an array
+        fruits.pop("orange");
+        console.log(fruits);
+    </script>
+</body>
+</html>

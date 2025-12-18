@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Event</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .btn, .btn-1{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 30px;
+            padding: 20px 10px;
+        }
+        #btn, #btn-1, #btn-2{
+            background: linear-gradient(135deg, #0000ff, #ff0000);
+            color: white;
+            padding: 20px;
+            outline: none;
+            border-radius: 25% 0;
+            border: none;  
+        }
+    </style>
+
+    <div class="btn">
+        <button id="btn">Show</button>
+        <button id="btn-1">More</button>
+        <button id="btn-2">Click</button>
+    </div>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            alert("Hello");
+        });
+
+        let btn1 = document.getElementById("btn-1");
+        btn1.addEventListener("mouseover", function() {
+            alert("Hi");
+        });
+
+        let btn2 = document.getElementById("btn-2");
+        btn2.addEventListener("keydown", function(){
+            alert("How")
+        });
+    </script>
+
+</body>
+</html>

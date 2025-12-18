@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+let a = 8; // number to be checked
+let prime = true; // flag variable
+
+for (let i=2; i<a; i++) { // checking divisibility only by 2 
+    if (a % i === 0) { // condition for non-prime number 
+        prime = false; // flag set to false 
+        break;
+    }
+}
+console.log(prime ? `${a} is a Prime Number` : `${a} is not a Prime Number`);
+
+// == property 
+let b = 10;
+let c = 30;
+if (b == c) {
+    console.log("b and c are equal");
+} else {
+    console.log("b and c are not equal");
+}
+
+//print first 10 numbers 
+for (let i=1; i<=10; i++){
+    console.log(i);
+}
+
+// reverse order
+for (let i=10; i>=1; i--){
+    console.log(i);
+}  
+</script>

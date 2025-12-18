@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+</head>
+<body>
+    <script>
+        // arrow function
+        const add = (a,b) => {
+            return a+b;
+        };
+        setTimeout(() => {
+            console.log(add(5,6));
+        }, 1000);
+
+        // function using timeout
+        function greet(){
+            console.log("Welcome")
+        }
+        setTimeout(greet,2000);
+
+        // Timeout function
+        setTimeout((name) =>{
+            console.log("Hello"+name);
+        }, 3000, " Kishore");
+
+        for (let i = 1; i <= 5; i++) {
+            setTimeout(() => {
+                console.log(i);
+            }, i*4000);
+        }
+
+        function person(name ="Kishore") {
+            console.log(`Hello, ${name}`);
+        }
+        person();   
+    </script>
+</body>
+</html>

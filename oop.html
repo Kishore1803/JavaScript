@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP-Concepts</title>
+  </head>
+
+  <body>
+    <script>
+      class Animal {
+        constructor(name, type) {
+          this.name = name;
+          this.type = type;
+        }
+
+        makesound() {
+          console.log(`${this.name} makes a sound`);
+        }
+      }
+
+      let dog = new Animal("Buddy", "Dog");
+      console.log(dog.name);
+      dog.makesound();
+
+      // inheritance
+      class Vehicle {
+        constructor(brand) {
+          this.brand = brand;
+        }
+
+        start() {
+          console.log(`${this.brand} is starting...`);
+        }
+      }
+
+      class Car extends Vehicle {
+        constructor(brand, model) {
+          super(brand);
+          this.model = model;
+        }
+        ShowModel() {
+          console.log(`This Car is a ${this.brand} ${this.model}`);
+        }
+      }
+
+      let MyCar = new Car("Tata", "Nexon");
+      MyCar.start();
+      MyCar.ShowModel();
+    </script>
+  </body>
+</html>

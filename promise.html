@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            let success = "2";
+            if (success) {
+                resolve("Task Completed");
+            } else {
+                reject("Task Failed");
+            }
+        });
+
+        promise
+            .then((result) => console.log(result))
+            .catch((error) => console.log(error));
+
+        const arr = [1, 2, 3, 4, 5];
+        const result = arr.every((val) => val > 5);
+
+        setTimeout((arr) => {
+            console.log(result);
+        }, 1000);
+
+        const arra = [1, 2, 3, 4, 5];
+        const result1 = arra.some((val) => val > 5);
+
+        setTimeout((arra) => {
+            console.log(result1);
+        }, 2000);
+
+        let empty = null;
+        console.log(empty);
+
+        console.log(5 + "2");
+
+
+        
+
+    </script>
+</body>
+
+</html>
