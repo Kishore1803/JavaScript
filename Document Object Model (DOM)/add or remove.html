@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add or Remove Item</title>
+  </head>
+
+  <body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <button onClick="addItem()">Add</button>
+    <button onClick="removeItem()">Remove</button>
+
+    <script>
+        function addItem() {
+            let newItem = document.createElement("li");
+            newItem.textContent = "New Item";
+            document.getElementById("list").appendChild(newItem);
+        }
+ 
+        function removeItem() {
+            let list = document.getElementById("list");
+            if (list.children.length>0){
+                list.removeChild(list.lastElementChild);
+            }
+            else{
+                alert("there is no item to delete");
+            }
+        }
+    </script>
+  </body>
+</html>
