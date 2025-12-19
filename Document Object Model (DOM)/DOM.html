@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+<body>
+    <p id="demo">Hello, World!</p>
+
+    <p id="message">Original Text</p>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        let paragraph = document.getElementById("demo");
+        console.log(paragraph.textContent);
+
+        function changeText(){
+        let message = document.getElementById("message");
+        message.textContent = "Text Changed";
+        message.style.color = "red";
+        message.fontSize = "18px";
+        }
+
+        function changeText(){
+            let message = document.getElementById("message")
+        }
+
+
+    </script>
+</body>
+</html>
