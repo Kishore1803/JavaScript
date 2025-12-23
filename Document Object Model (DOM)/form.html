@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submit</title>
+</head>
+
+<body>
+    <form id="form">
+        <input type="text" id="nameinput" placeholder="Enter Your Name" />
+        <select id="dropdown">
+            <option value="select">Select</option>
+            <option value="select">Python</option>
+            <option value="select">Java</option>
+        </select>
+        <button id="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+
+    <script>
+        // form submit event
+        let form = document.getElementById("submit");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("formMessage").textContent = "Form Submiited!";
+        });
+
+        // change value
+        document.getElementById("dropdown").addEventListener("change", function () {
+            document.getElementById("formMessage").textContent =
+                "You Selected:" + this.value;
+            });
+
+        // input value
+        document.getElementById("nameinput").addEventListener("input", function () {
+            document.getElementById("formMessage").textContent =
+                "Typing:" + this.value;
+            });
+    </script>
+</body>
+
+</html>
