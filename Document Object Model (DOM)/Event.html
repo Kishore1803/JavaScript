@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+</head>
+
+<body>
+    <!-- Event Handling -->
+
+    <p id="output"></p>
+    <button id="mybutton">Click Me</button>
+
+    <script>
+        let button = document.getElementById("mybutton");
+        button.addEventListener("click", function () {
+            document.getElementById("output").textContent = "Button Clicked";
+        });
+    </script>
+
+    <!-- KeyBoard Events -->
+
+    <input type="text" id="textinput" placeholder="typesomething..." />
+
+    <script>
+        let inputField = document.getElementById("textinput");
+        inputField.addEventListener("keydown", function (event) {
+            document.getElementById("output").textContent =
+                "keypressed:" + event.key;
+        });
+
+        inputField.addEventListener("keyup", function (event) {
+            if (event.key === "Enter") {
+                alert("Enter key released");
+            }
+        });
+    </script>
+</body>
+
+</html>
